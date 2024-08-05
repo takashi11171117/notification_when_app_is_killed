@@ -41,7 +41,7 @@ class NotificationOnKillService: Service() {
 
             val name = "Alarm notification service on application kill"
             val descriptionText = "If an alarm was set and the app is killed, a notification will show to warn the user the alarm will not ring as long as the app is killed"
-            val importance = NotificationManager.IMPORTANCE_DEFAULT
+            val importance = NotificationManager.IMPORTANCE_HIGH
             val channel = NotificationChannel("com.dolev.notification_when_app_is_killed", name, importance).apply {
                 description = descriptionText
             }
